@@ -19,13 +19,13 @@ class Home extends Component {
     render() {
         return (
         <Router>
-        <form>
+        <form>  
         <div className="">
         <Nav />
         <Switch>
         <Route   path="/About" exact component={About}/>
         <Route   path="/Admin" exact component={Admin}/>
-        <botton onClick={this.logout} style={{marginLeft: '25px'}} class="btn btn-danger" >Logout</botton>
+        <botton onClick={this.logout} style={{marginLeft: '10px'}} class="btn btn-danger" >Logout</botton>
         </Switch>
         
         </div>

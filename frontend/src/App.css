@@ -1,20 +1,23 @@
 .App {
   text-align: center;
-  height: 100%;
 }
 nav{
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(34, 34, 34, 0.2), 0 6px 20px 0 rgb(0, 0, 0);
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 15vh;
-  background-color: rgb(71, 69, 69);
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(95, 95, 95));
   color: rgb(253, 253, 253);
 }
 
 .nav-links{
-  width: 24%;
+  width: 35%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-} 
+}
+

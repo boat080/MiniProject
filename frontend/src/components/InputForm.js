@@ -20,67 +20,67 @@ const InputForm = props => {
 
     
     return (
-        <div className='form-container'>
-            <h2>Add employee</h2>
-           {form.name} {form.surname} {form.id} {form.tel} {form.mail} 
+    <div className ="input">
+            <div class="input2">
             <table>
-                <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td>
-                            <input className='inpt'
-                                type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_NAME', name: e.target.value })}
-                            
-                                
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Surname</td>
-                        <td>
-                        <input className='inpt'
-                                type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_SURNAME', surname: e.target.value })}
-                        />  
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Work/Day</td>
-                        <td>
-                        <input className='inpt'
-                                type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_ID', day: e.target.value })}
-                        />   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Tel</td>
-                        <td>
-                        <input className='inpt'
-                                type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_TEL', tel: e.target.value })}
-                        />   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>
-                        <input className='inpt'
-                                type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_MAIL', mail: e.target.value })}
-                        />   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button className='btn' onClick ={addEmployee}>CREATE</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                <h1>Add employees</h1>
+                    {form.name} {form.surname} {form.day} {form.tel} {form.mail} 
+                        
+                            <tbody>
+                                <tr> 
+                                    <td>
+                                        <input className='inpt'
+                                        type="text"
+                                        onChange={(e) => dispatch({ type: 'CHANGE_NAME', name: e.target.value })}    
+                                        placeholder="Name"/>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td>
+                                        <input className='inpt'
+                                        type="text"
+                                        onChange={(e) => dispatch({ type: 'CHANGE_SURNAME', surname: e.target.value })}
+                                        placeholder="Surname"/>  
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td>
+                                        <input className='inpt'
+                                        type="text"
+                                        onChange={(e) => dispatch({ type: 'CHANGE_DAY', day: e.target.value })}
+                                        placeholder="Work/Day"/>   
+                                    </td>
+                                </tr>
+                                <tr>
+                        
+                                    <td>
+                                        <input className='inpt'
+                                        type="text"
+                                        onChange={(e) => dispatch({ type: 'CHANGE_TEL', tel: e.target.value })}
+                                        placeholder="Tel"/>   
+                                    </td>
+                                </tr>
+                                <tr>
+                        
+                                    <td>
+                                        <input className='inpt'
+                                        type="text"
+                                        onChange={(e) => dispatch({ type: 'CHANGE_MAIL', mail: e.target.value })}
+                                        placeholder="Email"/>   
+                                    </td>
+                                </tr>
+                                <tr>
+                        
+                                    <td>
+                                        <button className='btn' onClick ={addEmployee}>CREATE</button>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            
+      </div>
     )
 }
 

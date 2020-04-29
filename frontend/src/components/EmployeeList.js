@@ -4,7 +4,8 @@ import './EmployeeList.css';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios'
 
-const EmployeeList = ()=>{
+const EmployeeList = (props)=>{
+    console.log('props page: ' + props.page)
     const employees = useSelector(state => state.employee);
     const dispatch = useDispatch();
     const getEmployees = async () => {
@@ -25,7 +26,7 @@ const EmployeeList = ()=>{
             {
                 employees.map((employee, index) => (
                     <ul key={index} style={{ margin: 5 }}>
-                        <EmployeeCard  {...employee}  />
+                        <EmployeeCard  page={props.page} {...employee}  />
                     </ul>
                 ))
             }

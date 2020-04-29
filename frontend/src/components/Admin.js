@@ -1,14 +1,20 @@
-import  React from 'react';
+import  React, {useState} from 'react';
 import '../App.css';
 import EmployeeList from './EmployeeList'
 import InputForm from './InputForm'
+import './Admin.css'
 
 function Admin(){
+
+    const [page] = useState('Admin')
     return(
-        <div>
-        <h1>Admin page</h1>
-        <EmployeeList/>  
-        <InputForm/>
+        <div class='admin'>
+        <br></br>
+        <h1>Admin</h1>
+            <EmployeeList page={page}/> 
+            <div class='admin'>
+            <InputForm/>
+            </div> 
         </div>
     );
 }

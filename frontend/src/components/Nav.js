@@ -9,20 +9,19 @@ function Nav(){
     };
 
     return(
-        <nav>
-            <h3>Soutern Infomation Technology</h3>
-            <ul className ="nav-links">
-                <Link style={navStyle} to="/About">
-                    <li><h4 class="btn btn-danger">ตารางทำงานและพนักงาน</h4></li>
+        <nav >
+            <h1>Soutern Infomation Technology</h1>
+            
+                <Link  to="/About">
+                    <h4 class="btn btn-danger">ตารางทำงานและพนักงาน</h4>
                 </Link>
                 <Link style={navStyle} to="/Admin">
-                    <li><h4 class="btn btn-danger">Admin</h4></li>
+                    <h4 class="btn btn-danger">Admin</h4>
                 </Link>
-                <Link style={navStyle} to="">
-                    <li><h4 class="btn btn-danger" >Logout</h4></li>
+                <Link style={navStyle} to="/Home">
+                    <h4 class="btn danger">Logout</h4>
                 </Link>
-
-            </ul>
+   
         </nav>
     );
 }

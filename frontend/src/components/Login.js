@@ -51,7 +51,6 @@ class Login extends Component {
        
         <br></br>
 
-
         
           <label for="exampleInputPassword1"><h3 class="text-success">Password</h3></label><br></br>
           <input 
