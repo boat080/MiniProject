@@ -11,7 +11,8 @@ app.use('/api', bodyParser.urlencoded({ extended: false }), router);
 
 let employees = [  { 'no': 0, 'day': "Mon,Wed,Thu,sun", 'name': "Sarawut" ,'surname':"Junpan" ,'tel':"0897654321", 'mail':"sarawut@gmail.com"},
                   { 'no': 1, 'day': "Mon,Thu,Fri", 'name': "wuttidat",'surname':"Urassaya"  ,'tel':"0812345679",'mail':"songwut@gmail.com"},
-                  { 'no': 2, 'day': "Wed,Thu,sun", 'name': "Weerapat",'surname':"jetomimut"  ,'tel':"0623457891",'mail':"weerapat@gmail.com"}
+                  { 'no': 2, 'day': "Wed,Thu,sun", 'name': "Weerapat",'surname':"jetomimut"  ,'tel':"0623457891",'mail':"weerapat@gmail.com"},
+                  { 'no': 3, 'day': "Mon,Thu,sun", 'name': "Sakkapon",'surname':"songmueng"  ,'tel':"0823457891",'mail':"sakkapon@gmail.com"}
                ];
 router.route('/employees')
     // get all employees

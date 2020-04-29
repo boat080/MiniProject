@@ -13,13 +13,13 @@ function Nav(){
             <h1>Soutern Infomation Technology</h1>
             
                 <Link  to="/About">
-                    <h4 class="btn btn-danger">ตารางทำงานและพนักงาน</h4>
+                    <h4 class="btn btn-danger">Employees</h4>
                 </Link>
                 <Link style={navStyle} to="/Admin">
                     <h4 class="btn btn-danger">Admin</h4>
                 </Link>
-                <Link style={navStyle} to="/Home">
-                    <h4 class="btn danger">Logout</h4>
+                <Link style={navStyle} to="/Gallary">
+                    <h4 class="btn danger">Gallary</h4>
                 </Link>
    
         </nav>
