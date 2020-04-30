@@ -9,7 +9,7 @@ const InputForm = props => {
     const employees = useSelector(state => state.employee)
 
     const addEmployee = async () => {
-        await axios.post(`http://localhost/api/employees`, form)
+        await axios.post(`https://mini-pj-backend.herokuapp.com/api/employees`, form)
         dispatch({
             type: 'ADD_EMPLOYEE', employee: {
                 no: employees.length > 0 ? employees[employees.length-1].no+1 : 0,

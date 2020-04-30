@@ -10,7 +10,7 @@ const EmployeeCard = (props)=>{
     const form = useSelector(state => state.form)
 
     const getEmployees = async () => {
-        const result = await axios.get(`http://localhost/api/employees`)
+        const result = await axios.get(`https://mini-pj-backend.herokuapp.com/api/employees`)
        
         const action = {type:'GET_EMPLOYEES',employee: result.data}
         dispatch(action)
@@ -20,13 +20,13 @@ const EmployeeCard = (props)=>{
       }, [])
 
     const deleteEmployee = async ()=>{
-        await axios.delete(`http://localhost/api/employees/${props.no}`)
+        await axios.delete(`https://mini-pj-backend.herokuapp.com/api/employees/${props.no}`)
         dispatch({type:'DELETE_EMPLOYEE',no: props.no })
         getEmployees()
           
     }
     const updateEmployee = async () => {
-        await axios.put(`http://localhost/api/employees/${props.no}`,form)
+        await axios.put(`https://mini-pj-backend.herokuapp.com/api/employees/${props.no}`,form)
          dispatch(
              {type:'UPDATE_EMPLOYEE',
              no: props.no,

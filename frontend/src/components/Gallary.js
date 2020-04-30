@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './Home.css'
 
+
 class Gallary extends Component {
     render() {
         return (
-    
+               
     <div>
+         
+        
         <br/>
+        
         <div class="responsive">
         <div class="gallery">
             
@@ -15,7 +19,7 @@ class Gallary extends Component {
         <div class="desc">ทำการสไปรท์สาย fiber 12 core</div>
         </div>
         </div>
-
+                
 
         <div class="responsive">
         <div class="gallery">
@@ -56,9 +60,9 @@ class Gallary extends Component {
         <div class="responsive">
         <div class="gallery">
             
-                <img src="https://scontent.fbkk7-3.fna.fbcdn.net/v/t1.0-9/95095380_3023174451073088_3989798706999197696_n.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_eui2=AeG7z3YBrzHlb39RPr5EG84Ttt3AF68shXK23cAXryyFcs-U8cskOVAC2zm7yaf6GpYWMIHUnMMTZ-kgWpZu_yA3&_nc_ohc=cd-RT41ZnFsAX9Wb8o2&_nc_ht=scontent.fbkk7-3.fna&oh=b3eca40d87031e97e8cad858a0bc20b4&oe=5ECEF9EE" alt="work" width="500" height="300"/>
+                <img src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/p720x720/95200817_3023371204386746_3012082378823696384_o.jpg?_nc_cat=102&_nc_sid=110474&_nc_eui2=AeG1f7_0mXUbmovw5_eubQTY5Yx8E3LNR_3ljHwTcs1H_QZHwO6CSEf_VQNeYrth2chnyfdBNu5ZnS7286k_3dgc&_nc_ohc=uYax8Mp3eNMAX8dwA8n&_nc_ht=scontent.fbkk5-6.fna&_nc_tp=6&oh=efb7196e26e11a43583309062b616b76&oe=5ECF3DA0" alt="work" width="500" height="300"/>
         
-        <div class="desc">เช็คกล้อง CCTV ของเทศบาลกะทู้</div>
+        <div class="desc">ติดตั้งตู้ของเทศบาลป่าตอง</div>
         </div>
         </div>
 
@@ -80,7 +84,9 @@ class Gallary extends Component {
         </div><br/>
         </div>
         <br/>
+        
         </div>
+       
         )
         }
 }

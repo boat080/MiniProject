@@ -54,4 +54,4 @@ router.route('/employees/:employee_no')
 
 
 app.use("*", (req, res) => res.status(404).send('404 Not found'));
-app.listen(80, () => console.log("Server is running"));
+app.listen(process.env.PORT || 80, () => console.log("Server is running"));

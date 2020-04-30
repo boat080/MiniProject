@@ -9,7 +9,7 @@ const EmployeeList = (props)=>{
     const employees = useSelector(state => state.employee);
     const dispatch = useDispatch();
     const getEmployees = async () => {
-        const result = await axios.get(`http://localhost/api/employees`)
+        const result = await axios.get(`https://mini-pj-backend.herokuapp.com/api/employees`)
        
         const action = {type:'GET_EMPLOYEES',employee: result.data}
         dispatch(action)
